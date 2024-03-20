@@ -23,7 +23,6 @@ const TodoModal = ({ type, todo, isOpen, closeModal }: TodoModalProps) => {
 
   const handleSubmit = () => {
     if (type === "add") {
-      console.log({ title });
       dispatch({
         type: "add",
         data: {
@@ -34,7 +33,6 @@ const TodoModal = ({ type, todo, isOpen, closeModal }: TodoModalProps) => {
         },
       });
     } else {
-      console.log({ title });
       dispatch({
         type: "update",
         data: {

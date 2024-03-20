@@ -28,7 +28,7 @@ const testTodo = {
 };
 
 const TodoList = () => {
-  const { filteredTodos, dispatch } = useTodoContext();
+  const { filteredTodos } = useTodoContext();
   const hasTodos = filteredTodos.length > 0;
 
   return (
